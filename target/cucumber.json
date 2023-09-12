@@ -1,0 +1,78 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-09-12T06:10:20.514Z",
+        "line": 6,
+        "name": "Validate the GTX API Responses",
+        "description": "",
+        "id": "gtx-api;validate-the-gtx-api-responses",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NumberFormatException: empty String\r\n\tat java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)\r\n\tat java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\n\tat java.base/java.lang.Double.parseDouble(Double.java:651)\r\n\tat stepdefinition.APIFunction.GTXAPI(APIFunction.java:461)\r\n\tat stepdefinition.Steps.post_the_gtx_api_request(Steps.java:305)\r\n\tat ✽.POST the GTXApi request(file:///C:/Users/Gowthamkumar.R/git/repositoryFinal/Cucumberwithapi/src/test/resources/GTX/GTXApi.feature:7)\r\n",
+              "duration": 1238764127000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "POST the GTXApi request",
+            "match": {
+              "location": "stepdefinition.Steps.post_the_gtx_api_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1360600,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Response retrieved from the server",
+            "match": {
+              "location": "stepdefinition.Steps.response_retrieved_from_the_server()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Validate the Response is sucessful",
+            "match": {
+              "location": "stepdefinition.Steps.validate_the_response_is_sucessful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "GTX API",
+    "description": "",
+    "id": "gtx-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/GTX/GTXApi.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
